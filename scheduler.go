@@ -662,9 +662,9 @@ func (s *scheduler) addOrUpdateJob(id uuid.UUID, definition JobDefinition, taskW
 		return nil, ErrNewJobTaskNotFunc
 	}
 
-	if err := s.verifyParameterType(taskFunc, tsk); err != nil {
-		return nil, err
-	}
+	// if err := s.verifyParameterType(taskFunc, tsk); err != nil {
+	// 	return nil, err
+	// }
 
 	j.name = runtime.FuncForPC(taskFunc.Pointer()).Name()
 	j.function = tsk.function

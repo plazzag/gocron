@@ -11,7 +11,7 @@ If you want to chat, you can find us on Slack at
 ## Quick Start
 
 ```
-go get github.com/go-co-op/gocron/v2
+go get github.com/plazzag/gocron
 ```
 
 ```golang
@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/go-co-op/gocron/v2"
+	"github.com/plazzag/gocron"
 )
 
 func main() {
